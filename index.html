@@ -1,34 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Random Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coding Quiz</title>
+
+
+<link rel="stylesheet" href="Style.css">
+<div id="Intro">
+    <h1>Coding Quiz</h1>
+    <p>Please try to answer within 69 seconds. Correct answers will result in score, wrong answers will penalize your score/time by ten seconds!</p>
+    <ul id="choicesUl"></ul>
+
+
+
+
+    <button id="startButton"> Start </button>
+</div>
+<div id="Game">
+    <div id="time"></div>
+    <p>Quiz Start </p>
+    <h2 id="timerText">timer</h2>
+    <div id="Questions">
+
+
+
     </div>
-    <script src="script.js"></script>
-  </body>
+</div>
+<div id="ending">
+<h1>Quiz Over</h1>
+<p>You scored <span id='score'></span>/<span id='total'></span> points!</p>
+<label for='initials'>Initials </label>
+<input id="initials" type="text">
+<button id='submit'>Submit</button>
+<button id='clear'>Clear</button>
+<ul id="Scores">
+
+
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script src="Assets.js"></script>
+</body>
+
 </html>
